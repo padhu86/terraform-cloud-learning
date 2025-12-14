@@ -12,3 +12,13 @@ resource "aws_security_group" "bank-trbk-scs-01" {
   }
 
 }
+
+resource "aws_security_group" "bank-trbk-hana-01" {
+  name        = "bank-trbk-hana-01"
+  description = "trbk npd hana network security group"
+
+  tags = {
+    Name = "trbk-npd-hana-01"
+  }
+
+}
